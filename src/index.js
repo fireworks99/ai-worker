@@ -39,6 +39,9 @@ export default {
 };
 
 async function chat(request, env) {
+
+	console.log('API KEY:', env.GEMINI_API_KEY)
+
 	try {
 		const body = await request.json();
 
